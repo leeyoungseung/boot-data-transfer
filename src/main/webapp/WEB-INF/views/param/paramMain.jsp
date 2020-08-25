@@ -30,5 +30,26 @@
     URI에 파라미터를 담아서 서버로 보낸다. 
     Response는 JSP페이지
  -->
+<div>
+    <h3><button id="getInfo" onclick="javascript:getInfoUsingId();">멤버 정보 보기(JS)</button> </h3>
+    <form>
+        <input id="param1" type="text">
+    </form>
+
+</div>
 </body>
+
+<script>
+
+function getInfoUsingId() {
+	id = document.getElementById("param1").value;
+	
+	if (id == null || id == "") {
+		id = 0;
+	}
+	
+	location.href="paramData/usingTag?id="+id;
+}
+
+</script>
 </html>

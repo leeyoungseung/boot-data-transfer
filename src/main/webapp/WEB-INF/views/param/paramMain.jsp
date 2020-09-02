@@ -18,11 +18,11 @@
  -->
 
 <div>
-    <h3><a href="paramData/usingTag?id=0">관리자 정보 보기</a></h3>
-    <h3><a href="paramData/usingTag?id=1">1번 회원 정보보기 </a></h3>
-    <h3><a href="paramData/usingTag?email=lee-y002@gmail.com">2번 회원 정보보기 </a></h3>
-    <h3><a href="paramData/usingTag?id=3&email=lee-y003@gmail.com">3번 회원 정보보기 </a></h3>
-    <h3><a href="paramData/usingTag">에러메시지 출력 </a></h3>
+    <h3><a href="paramData/usingParam?id=0">관리자 정보 보기</a></h3>
+    <h3><a href="paramData/usingParam?id=1">1번 회원 정보보기 </a></h3>
+    <h3><a href="paramData/usingParam?email=lee-y002@gmail.com">2번 회원 정보보기 </a></h3>
+    <h3><a href="paramData/usingParam?id=3&email=lee-y003@gmail.com">3번 회원 정보보기 </a></h3>
+    <h3><a href="paramData/usingParam">에러메시지 출력 </a></h3>
 </div>
 
 <!-- 
@@ -48,7 +48,7 @@ function getInfoUsingId() {
 		id = 0;
 	}
 	
-	location.href="paramData/usingTag?id="+id;
+	location.href="paramData/usingParam?id="+id;
 }
 
 </script>

@@ -5,9 +5,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Param Ex (1) : usingTag </title>
+<title>Param Ex : usingParam </title>
 </head>
 <body>
+<div>
+    <h2>Param Ex</h2>
+</div>
 <div>
 <c:if test="${member ne null}">
 <ul>

@@ -24,7 +24,7 @@ public class ParamController {
 		return "param/paramMain";
 	}
 	
-	@RequestMapping(value = "/paramData/usingTag", method = RequestMethod.GET)
+	@RequestMapping(value = "/paramData/usingParam", method = RequestMethod.GET)
 	public String paramExUsingATag(
 			@RequestParam(required = false) Integer id
 			,@RequestParam(required = false) String email
@@ -58,7 +58,7 @@ public class ParamController {
 		model.addAttribute("member",member);
 		
 		
-		return "param/usingTag";
+		return "param/usingParam";
 	}
 
 }

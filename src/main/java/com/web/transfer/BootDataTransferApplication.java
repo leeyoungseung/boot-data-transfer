@@ -39,8 +39,6 @@ public class BootDataTransferApplication {
 		exList.add(new MainPageExListDTO("파라미터예제","paramData","리퀘스트 파라미터를 다루는 예제"));
 		exList.add(new MainPageExListDTO("Path 파라미터예제","pathParamData","Path 파라미터를 다루는 예제"));
 		exList.add(new MainPageExListDTO("Form 데이터 예제","formData","Form 데이터를 다루는 예제"));
-		exList.add(new MainPageExListDTO("List 데이터 예제","listData","리스트 데이터를 프론트에서 보내는 것을 다루는 예제"));
-		//exList.add(new MainPageExListDTO("Multi Form 데이터 예제","multiFormData","멀티폼 데이터를 프론트에서 보내는 것을 다루는 예제"));
 		exList.add(new MainPageExListDTO("File 데이터 예제","fileData","파일 데이터를 프론트에서 보내는 것을 다루는 예제"));
 		ss.setAttribute("exList", exList);
 		

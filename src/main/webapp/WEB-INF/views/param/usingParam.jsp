@@ -12,20 +12,18 @@
     <h2>Param Ex</h2>
 </div>
 <div>
-<c:if test="${member ne null}">
-<ul>
-    <li>아아디 : ${member.id }</li>
-    <li>이름 : ${member.name }</li>
-    <li>이메일 : ${member.email }</li>
-</ul>
-
-</c:if>
-
+    <c:if test="${member ne null}">
+        <ul>
+            <li>아아디 : ${member.id }</li>
+            <li>이름 : ${member.name }</li>
+            <li>이메일 : ${member.email }</li>
+        </ul>
+    </c:if>
 </div>
 <div>
 <ul>
     <li>
-        <div><label><a href="../paramData">파라미터예제 메인</a></label></div>
+        <div><label><a href="http://localhost:8080/paramData">파라미터예제 메인</a></label></div>
     </li>
 </ul>
 </div>

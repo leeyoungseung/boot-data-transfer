@@ -11,9 +11,7 @@
 <div>
     <h2>Form Ex ${title }</h2>
 </div>
-
 <div>
-
 <c:if test="${joindMember ne null}">
         <ul>
             <li>아이디 : <c:out value="${joindMember.id }"/></li>
@@ -30,13 +28,12 @@
             </c:if>
         </ul>
 </c:if>
-
 </div>
 	<div>
 		<ul>
 			<li>
 				<div>
-					<label><a href="http://localhost:8080/formData/formDataMain">Form 예제 메인</a></label>
+					<label><a href="http://localhost:8080/formData/">Form 예제 메인</a></label>
 				</div>
 			</li>
 		</ul>

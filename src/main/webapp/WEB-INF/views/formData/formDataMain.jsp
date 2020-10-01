@@ -18,12 +18,12 @@
 
 <div style='border: 1px solid #F0F;'>
 <h2>1.파라미터 전송</h2>
-<form action="formData/insertMember1" method="POST">
+<form action="/formData/insertMember1" method="POST">
     <label>Member ID       : </label> <input type="text" id="id" name="id"/> <br>
     <label>Member Name     : </label> <input type="text" id="name" name="name"/>   <br>
     <label>Member Password : </label> <input type="password" id="passwd" name="passwd"/> <br>
     <label>Member E-mail   : </label> <input type="text" id="email" name="email"/> <br>
-    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday" name="birthday"/> <br>
+    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday1" name="birthday"/> <br>
     <label>Member Sex      : </label>  <br>
         <label>Other</label>              <input type="radio" id="other" name="sex" value="other"/> <br>
         <label>Man</label>                <input type="radio" id="man" name="sex" value="man"/> <br>
@@ -31,17 +31,16 @@
     
     <label> Submit</label> <input type="submit" value="submit"> <br>
 </form>
-
 </div>
 
 <div style='border: 1px solid #F0F;'>
 <h2>2.폼 클래스를 사용</h2>
-<form action="formData/insertMember2" method="POST">
+<form action="/formData/insertMember2" method="POST">
     <label>Member ID       : </label> <input type="text" id="id" name="id"/> <br>
     <label>Member Name     : </label> <input type="text" id="name" name="name"/>   <br>
     <label>Member Password : </label> <input type="password" id="passwd" name="passwd"/> <br>
     <label>Member E-mail   : </label> <input type="text" id="email" name="email"/> <br>
-    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday" name="birthday"/> <br>
+    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday2" name="birthday"/> <br>
     <label>Member Sex      : </label>  <br>
         <label>Other</label>              <input type="radio" id="other" name="sex" value="other"/> <br>
         <label>Man</label>                <input type="radio" id="man" name="sex" value="man"/> <br>
@@ -60,12 +59,12 @@
 
 <div style='border: 1px solid #F0F;'>
 <h2>3.파라미터 전송(JS)</h2>
-<form action="formData/insertMember1" id="insertForm3" method="POST">
+<form action="/formData/insertMember1" id="insertForm3" method="POST">
     <label>Member ID       : </label> <input type="text" id="id" name="id"/> <br>
     <label>Member Name     : </label> <input type="text" id="name" name="name"/>   <br>
     <label>Member Password : </label> <input type="password" id="passwd" name="passwd"/> <br>
     <label>Member E-mail   : </label> <input type="text" id="email" name="email"/> <br>
-    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday" name="birthday"/> <br>
+    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday3" name="birthday"/> <br>
     <label>Member Sex      : </label>  <br>
         <label>Other</label>              <input type="radio" id="other" name="sex" value="other"/> <br>
         <label>Man</label>                <input type="radio" id="man" name="sex" value="man"/> <br>
@@ -78,12 +77,12 @@
 
 <div style='border: 1px solid #F0F;'>
 <h2>4.폼 클래스를 사용(JS)</h2>
-<form action="formData/insertMember2" id="insertForm3" method="POST">
+<form action="/formData/insertMember2" id="insertForm3" method="POST">
     <label>Member ID       : </label> <input type="text" id="id" name="id"/> <br>
     <label>Member Name     : </label> <input type="text" id="name" name="name"/>   <br>
     <label>Member Password : </label> <input type="password" id="passwd" name="passwd"/> <br>
     <label>Member E-mail   : </label> <input type="text" id="email" name="email"/> <br>
-    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday" name="birthday"/> <br>
+    <label>Member Birth Day: </label> <input type="text" class="birthday" id="birthday4" name="birthday"/> <br>
     <label>Member Sex      : </label>  <br>
         <label>Other</label>              <input type="radio" id="other" name="sex" value="other"/> <br>
         <label>Man</label>                <input type="radio" id="man" name="sex" value="man"/> <br>
@@ -109,7 +108,18 @@
 </body>
 <script type="text/javascript">
 $(function(){
-    $(".birthday").datepicker({ dateFormat: 'yy-mm-dd' });
+    $("#birthday1").datepicker({ dateFormat: 'yy-mm-dd' });
+});
+$(function(){
+    $("#birthday2").datepicker({ dateFormat: 'yy-mm-dd' });
+});
+
+$(function(){
+    $("#birthday3").datepicker({ dateFormat: 'yy-mm-dd' });
+});
+
+$(function(){
+    $("#birthday4").datepicker({ dateFormat: 'yy-mm-dd' });
 });
 
 cnt=0;
@@ -135,8 +145,9 @@ function sendForm(form) {
 		}
 	}
 	
-	form.submit();
+	console.log(id +","+name+","+passwd+","+email+","+birthday+","+sex );
 	
+	form.submit();
 }
 
 </script>
